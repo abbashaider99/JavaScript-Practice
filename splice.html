@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice and Splice Methods</title>
+</head>
+<body>
+    <h3>Slice and Splice Methods</h3>
+
+    <script>
+
+        //slice method
+        let names = ["Abbas", "John", "Neha", "Rehman"];
+        console.log("Before Slice: "+names);
+
+        let doSlice = names.slice(1, 3);
+        console.log("After Slice: "+doSlice)
+
+        //splice method
+        let stuNames = ["Abbas", "John", "Neha", "Rehman"];
+        console.log(stuNames);
+        //it will effect in the original array...
+        stuNames.splice(2,0,"Burak", "Deniz");
+        console.log(stuNames);
+
+        stuNames.splice(2,1,"Raza");  //here 1 means that remove the one element.
+        console.log(stuNames);
+
+    </script>
+    
+</body>
+</html>
