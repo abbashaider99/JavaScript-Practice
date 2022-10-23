@@ -7,10 +7,13 @@
     <title>forEach</title>
 </head>
 <body>
-    
-
     <script>
         //forEach
+        let arr = [2,4,6,8,10,12];
+        let arrRes = arr.forEach( n => console.log(n*2));
+
+        //array.forEach(function(currentValue, index, arr), thisValue)
+        let arrRes1 = arr.forEach((n, i, myArr) => console.log("Element multiply by 3: "+n*3+", Index No.: "+ i+", Complete Array: "+ myArr));
     </script>
 </body>
 </html>
