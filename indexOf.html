@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOf and LastIndexOf</title>
+</head>
+<body>
+    <h3>indexOf and lastIndexOf Practice</h3>
+    <p>indexOf() returns the position of a specified value in an array.</p>
+
+    <script>
+
+        //indexOf
+        let names = ["Abbas", "Pavan", "Neha", "Aman", "Neha"]; //indexOf search from the start to end
+        let nameIndex = names.indexOf("Neha");
+        console.log("Index of Neha Result: "+nameIndex);
+
+        let nameIndex1 = names.indexOf("Neha", 3);
+        console.log("Index of Neha, Search after 3 Index-Aman Result: "+nameIndex1);
+
+        let nameIndex2 = names.indexOf("Neha", -2);
+        console.log("Index of Neha, Search after -2 Index-Aman Result: "+nameIndex2);
+
+        //lastIndexOf
+        let nameIndex3 = names.lastIndexOf("Neha"); //lastIndexOf search from the end to start
+        console.log("Index of Neha - Searched from end to start, Result: "+nameIndex3);
+
+        let nameIndex4 = names.lastIndexOf("Neha", 3);
+        console.log("Index of Neha - Searched from the Aman to start, Result: "+nameIndex4);
+
+        let noFound = names.indexOf("Balabala");
+        console.log("If given element is not present then it will return minus one, Result: "+noFound);
+        
+    </script>
+</body>
+</html>

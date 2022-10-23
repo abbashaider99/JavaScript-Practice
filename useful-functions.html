@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Function</title>
+</head>
+<body>
+    
+
+    <script>
+        //Map Function
+        let arr = [2,4,5,6,7,8]; //I want to perform some calculation for this array. --> multiply by 2 every element.
+
+        let afterCal = arr.map( (myVal) => myVal*2 ); //We can call function inside map paranthesis and define anywhere.
+        console.log("Map Result: "+afterCal);
+
+        //Slice Function
+        let arr2 = ["Banana", "Apple", "Gauvava", "Mango", "Pineapple"]; //I want to get Gauvava, and Mango
+        let afetSlice = arr2.slice(2, 4);
+        console.log("Slice Result: "+afetSlice);
+
+        // Concate Function
+        let arr3 = [10,11,12,13,14,15,16];
+        let arr4 = [1,2,3,4,5,6,7,8,9]; 
+        let afterConcate = arr4.concat(arr3);
+        console.log("Concate Result: "+afterConcate);
+
+        //... dots concatination - add any array
+        let threeDotsConcate = [...arr3, 17, 18, 19, 20, " the end...!"];
+        console.log("Three Dots Concatination Result: "+threeDotsConcate);
+
+        //...dots concatination and concate function
+        let names = ["abbas", "haider", "burak"];
+        let threeDotsAndConcateFun = arr4.concat(arr3, ...names);
+        console.log(threeDotsAndConcateFun);
+
+    </script>
+</body>
+</html>
