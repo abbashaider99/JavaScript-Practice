@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <h2 id="loginStatus"></h2>
+    <script>
+        
+        let isLogin = true;
+
+        const renderapp = () =>{
+            document.getElementById("loginStatus").innerHTML = "Welcome Back, Abbas!";
+            alert("Login Success!");
+        }
+
+        const needLogin = () =>{
+            document.getElementById("loginStatus").innerHTML = "Please Login!";
+            alert("Login Required!");
+        }
+
+        let age = 25 ;
+
+        //ternary operator - single condition
+        isLogin ? renderapp() : needLogin();
+
+        //ternary operator - mulitple condition
+        let canVote = (age>=25) ? 'You can vote and can be PM' : (age>=18)? 'You can vote but cannot be PM' : 'You cannot vote';
+        
+        alert(canVote);
+
+    </script>
+</body>
+</html>
